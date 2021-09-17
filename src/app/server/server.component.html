@@ -1,0 +1,9 @@
+<!-- 
+    <p>Server id: {{ serverId }} is {{ serverStatus }} with variable</p>
+    <p> Server id: {{ serverId }} is {{ getServerStatus() }} with method, string interpolation</p> 
+-->
+
+<p [ngStyle]="{ backgroundColor: getColor()}"
+    [ngClass]="{ online: serverStatus === 'online' }"> <!-- add online class if serverStatus === 'online'-->
+    Server with ID {{ serverId }} is {{ getServerStatus() }}
+</p>
